@@ -1,0 +1,10 @@
+name: prosody
+os: Debian, Ubuntu
+os_family: Debian
+version: 0.5.0
+release: 1
+minimum_version: 2016.11.2
+summary: Formula for installing and configuring Prosody XMPP server
+description: Formula for installing and configuring Prosody XMPP server.
+	Configuration enables (by default.yaml):
+  - TLS for client to server and server to server connections

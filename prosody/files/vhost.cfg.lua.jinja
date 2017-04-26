@@ -1,0 +1,15 @@
+{% from "prosody/map.jinja" import prosody with context -%}
+VirtualHost "{{prosody.vhost}}"
+        enabled = true
+        ssl = {
+            key = "{{prosody.ssl_key_path}}";
+            certificate = "{{prosody.ssl_cert_path}}";
+        }
+
+Component "conference.{{prosody.vhost}}" "muc"
+        restrict_room_creation = "local"
+
+modules_enabled = {
+	-- listening on 5582
+	"admin_telnet"; -- Enable mod_admin_telnet
+}

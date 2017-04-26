@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# vim: ft=yaml
+prosody:
+  package: prosody
+  vhost: example.org
+  ssl_cert_path: /etc/prosody/certs/localhost.crt
+  ssl_key_path: /etc/prosody/certs/localhost.key
+  c2s_encryption: true
+  s2s_sec_auth: true

@@ -1,0 +1,6 @@
+# For more vriables available then those below please have a look into
+#   prosody/defaults.yaml file
+prosody:
+  vhost: xmpp.mydomain.com
+  ssl_cert_path: /etc/prosody/certs/fullchain1.pem
+  ssl_key_path: /etc/prosody/certs/privkey1.pem
